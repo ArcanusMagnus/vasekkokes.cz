@@ -1,3 +1,4 @@
+import Section from "../UI/Section";
 import styles from "./Welcome.module.css";
 
 const Welcome = () => {
@@ -7,7 +8,7 @@ const Welcome = () => {
   const greeting = greetings[greetingNo];
 
   return (
-    <section className={styles.welcome}>
+    <Section className={styles.welcome}>
       <div>
         <h1>{greeting}</h1>
         <p>
@@ -17,7 +18,7 @@ const Welcome = () => {
           to discover some of them, just follow the lines!
         </p>
       </div>
-    </section>
+    </Section>
   );
 };
 
