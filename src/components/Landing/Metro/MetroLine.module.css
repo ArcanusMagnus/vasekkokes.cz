@@ -1,11 +1,31 @@
 .line {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 2rem;
+  margin: 5rem 1rem 0 0;
+}
+
+.line:first-child {
   text-align: right;
-  max-width: 20rem;
+}
+
+.line:last-child {
+  text-align: left;
 }
 
 .line div {
   width: 100%;
-  margin: 2rem 1rem 0 0;
+  height: 7rem;
+}
+
+.label {
+  width: 30rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.label div {
+    vertical-align: middle;
 }

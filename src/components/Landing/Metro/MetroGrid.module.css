@@ -1,14 +1,8 @@
-.MetroGrid table {
-  min-height: 400px;
-  min-width: 600px;
-  margin: auto;
-}
-
 .active,
 .blank,
 .undefined {
-    height: 5rem;
-    width: 5rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 .visual {
@@ -29,6 +23,6 @@
 
 .active {
     border-radius: 50%;
-    border-width: 0.5rem;
+    border-width: 0.2rem;
     border-style: solid;    
 }

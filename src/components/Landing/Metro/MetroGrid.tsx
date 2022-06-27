@@ -21,6 +21,8 @@ const MetroGrid = (props: { data: MetroStopModel[] }) => {
       label_left.push(<div key={uuidv4()}></div>);
     }
 
+
+    /* NEEDS TO BE REDONE - pass only data, not JSX components */
     visual.push(
       <div
         className={`${styles.visual} ${
@@ -57,12 +59,12 @@ const MetroGrid = (props: { data: MetroStopModel[] }) => {
 
   return (
     <>
-      <MetroLine line={label_left} />
+      <MetroLine line={label_left} label />
       <MetroLine line={visual} />
       <MetroLine line={events} />
       <MetroLine line={writing} />
       <MetroLine line={ideas} />
-      <MetroLine line={label_right} />
+      <MetroLine line={label_right} label />
     </>
   );
   //   return (
