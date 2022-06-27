@@ -3,3 +3,32 @@
   min-width: 600px;
   margin: auto;
 }
+
+.active,
+.blank,
+.undefined {
+    height: 5rem;
+    width: 5rem;
+}
+
+.visual {
+    border-color: #AFAD25;
+}
+
+.events {
+    border-color: #FF622D;
+}
+
+.ideas {
+    border-color: #F9ED32;
+
+}
+.writing {
+    border-color: #12058F;
+}
+
+.active {
+    border-radius: 50%;
+    border-width: 0.5rem;
+    border-style: solid;    
+}
