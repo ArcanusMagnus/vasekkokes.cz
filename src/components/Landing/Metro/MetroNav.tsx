@@ -9,7 +9,6 @@ const STOPS_DATA: MetroStopModel[] = [
   {
     id: uuidv4(),
     label: "Ornament and rhythm",
-    label_position: "right",
     events: "blank",
     visual: "blank",
     writing: "active",
@@ -18,7 +17,6 @@ const STOPS_DATA: MetroStopModel[] = [
   {
     id: uuidv4(),
     label: "][",
-    label_position: "right",
     events: "active",
     visual: "active",
     writing: "active",
@@ -27,21 +25,21 @@ const STOPS_DATA: MetroStopModel[] = [
   {
     id: uuidv4(),
     label: "Ornamental tapestry",
-    label_position: "left",
+    label_left: true,
     visual: "active",
     ideas: "active",
   },
   {
     id: uuidv4(),
     label: "Contemporary Czech Architecture",
-    label_position: "left",
+    label_left: true,
     visual: "active",
     writing: "active",
   },
   {
     id: uuidv4(),
     label: "Display",
-    label_position: "left",
+    label_left: true,
     visual: "active",
     ideas: "active",
   },
@@ -50,7 +48,7 @@ const STOPS_DATA: MetroStopModel[] = [
 const MetroNav = () => {
   return (
     <Section className={styles.MetroNav}>
-      <MetroGrid stops={12} />
+      <MetroGrid data={STOPS_DATA} />
     </Section>
   );
 };
