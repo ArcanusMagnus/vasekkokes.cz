@@ -1,5 +1,5 @@
 type MetroStopModel = {
-  id: number;
+  id: string;
   label?: string;
   label_position?: "left" | "right";
   visual?: "active" | "blank" | undefined;
