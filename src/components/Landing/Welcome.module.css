@@ -1,3 +1,7 @@
+.welcome {
+  min-height: 100vh;
+}
+
 .welcome div {
   width: 600px;
   margin: auto;
