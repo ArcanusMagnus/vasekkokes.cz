@@ -4,7 +4,7 @@ import styles from "./MetroStop.module.css";
 const MetroStop = (props: MetroStopComponent) => {
   const outerClasses = `${styles.outer} ${props.type && styles[props.type]} ${
     props.station === "blank" && styles.blank
-  }`;
+  } ${props.station === "last" && styles.last}`;
   const innerClasses = `${styles["metro_stop"]} ${
     !props.children &&
     (props.station ? styles[props.station] : styles.undefined)

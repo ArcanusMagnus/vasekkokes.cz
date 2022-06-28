@@ -8,7 +8,7 @@ type MetroStopModel = {
   writing?: StationType;
 };
 
-export type StationType = "active" | "blank" | undefined;
+export type StationType = "active" | "blank" | "last" | undefined;
 
 export type MetroData = {
   id: string;
