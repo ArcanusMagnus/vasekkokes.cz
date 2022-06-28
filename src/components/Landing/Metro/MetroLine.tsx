@@ -1,11 +1,15 @@
-import React from "react";
+import { MetroData } from "../../../models/metro-stop";
+import MetroStop from "./MetroStop";
 
 import styles from "./MetroLine.module.css";
 
-const MetroLine = (props: { line: React.ReactNode[]; label?: boolean }) => {
-  const content = props.line.map((item) => item);
+const MetroLine = (props: { line: MetroData[]; label?: boolean }) => {
+  const content = props.line.map((item) => (
+    <MetroStop id={item.id} className={item.className}>
+      {item.content}
+    </MetroStop>
+  ));
   const classes = `${styles.line} ${props.label && styles.label}`;
-  console.log(classes);
   return <div className={classes}>{content}</div>;
 };
 
