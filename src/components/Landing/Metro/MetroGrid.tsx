@@ -1,7 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
 import MetroLine from "./MetroLine";
-import MetroStop from "./MetroStop";
 import MetroStopModel, { MetroData } from "../../../models/metro-stop";
 import styles from "./MetroGrid.module.css";
 
@@ -23,30 +22,26 @@ const MetroGrid = (props: { data: MetroStopModel[] }) => {
     }
 
     visual.push({
-      className: `${styles.visual} ${
-        item.visual ? styles[item.visual] : styles.undefined
-      }`,
+      type: 'visual',
+      station: item.visual ?? undefined,
       id: item.id,
     });
 
     events.push({
-      className: `${styles.events} ${
-        item.events ? styles[item.events] : styles.undefined
-      }`,
+      type: 'events',
+      station: item.events ?? undefined,
       id: item.id,
     });
 
     writing.push({
-      className: `${styles.writing} ${
-        item.writing ? styles[item.writing] : styles.undefined
-      }`,
+      type: 'writing',
+      station: item.writing ?? undefined,
       id: item.id,
     });
 
     ideas.push({
-      className: `${styles.ideas} ${
-        item.ideas ? styles[item.ideas] : styles.undefined
-      }`,
+      type: 'ideas',
+      station: item.ideas ?? undefined,
       id: item.id,
     });
   }

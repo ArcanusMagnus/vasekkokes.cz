@@ -5,7 +5,11 @@ import styles from "./MetroLine.module.css";
 
 const MetroLine = (props: { line: MetroData[]; label?: boolean }) => {
   const content = props.line.map((item) => (
-    <MetroStop id={item.id} className={item.className}>
+    <MetroStop
+      id={item.id}
+      type={item.type}
+      station={item.station}
+    >
       {item.content}
     </MetroStop>
   ));

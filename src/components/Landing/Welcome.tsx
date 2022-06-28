@@ -12,10 +12,12 @@ const Welcome = () => {
       <div>
         <h1>{greeting}</h1>
         <p>
-          My name is Vašek and welcome to my page. I work in multiple creative
-          fields: visual, event promotion, writing and I also have a lot of
-          ideas. These fields meet each other in different projects. If you want
-          to discover some of them, just follow the lines!
+          My name is Vašek, welcome to my page. I work in multiple creative
+          fields.
+          <br />
+          Visual, events, writing and ideas. These
+          fields meet each other in different projects.
+          <br /> If you want to discover some of them, just follow the lines!
         </p>
       </div>
     </Section>

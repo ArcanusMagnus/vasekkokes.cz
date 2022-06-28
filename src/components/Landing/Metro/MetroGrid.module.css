@@ -1,28 +1,23 @@
 .active,
 .blank,
 .undefined {
-    height: 2rem;
-    width: 2rem;
-}
-
-.visual {
-    border-color: #AFAD25;
-}
-
-.events {
-    border-color: #FF622D;
-}
-
-.ideas {
-    border-color: #F9ED32;
-
-}
-.writing {
-    border-color: #12058F;
+  height: 2rem;
+  width: 2rem;
 }
 
 .active {
-    border-radius: 50%;
-    border-width: 0.2rem;
-    border-style: solid;    
+  border-radius: 50%;
+  border-width: 0.2rem;
+  border-style: solid;
+}
+
+.blank:first-child {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.blank:last-child,
+.undefined:last-child {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
