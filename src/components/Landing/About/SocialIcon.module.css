@@ -1,4 +1,18 @@
-.icon svg {
+.icon {
+    display: flex;
     width: 6.25rem;
     height: 6.25rem;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.icon a {
+    display: block;
+    margin: auto;
+}
+
+.icon svg {
+    color: #f1f2f2;
+    width: 3rem;
+    height: 3rem;
 }

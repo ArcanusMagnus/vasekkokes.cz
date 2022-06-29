@@ -9,6 +9,7 @@
 .about p {
     max-width: 42.25rem;
     margin: 5rem  auto;
+    text-align: left;
 }
 
 .avatar {
@@ -21,6 +22,7 @@
     background-size: 140%;
 }
 
-.contact {
+.about p.contact {
     font-size: 1.25rem;
+    text-align: center;
 }

@@ -1,10 +1,10 @@
 import {
-  faFacebook,
+  faFacebookF,
   faBehance,
-  faLinkedin,
+  faLinkedinIn,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faAt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { SocialsModel } from "../../../models/socials-model";
@@ -14,17 +14,8 @@ import styles from "./Socials.module.css";
 const Socials = (props: SocialsModel) => {
   return (
     <div className={styles.socials}>
-      {props.facebook && props.facebook.length > 0 && (
-        <SocialIcon
-          link={props.facebook}
-          icon={<FontAwesomeIcon icon={faFacebook} />}
-        />
-      )}
-      {props.instagram && props.instagram.length > 0 && (
-        <SocialIcon
-          link={props.instagram}
-          icon={<FontAwesomeIcon icon={faInstagram} />}
-        />
+      {props.email && props.email.length > 0 && (
+        <SocialIcon link={props.email} icon={<FontAwesomeIcon icon={faAt} />} />
       )}
       {props.behance && props.behance.length > 0 && (
         <SocialIcon
@@ -35,13 +26,19 @@ const Socials = (props: SocialsModel) => {
       {props.linkedin && props.linkedin.length > 0 && (
         <SocialIcon
           link={props.linkedin}
-          icon={<FontAwesomeIcon icon={faLinkedin} />}
+          icon={<FontAwesomeIcon icon={faLinkedinIn} />}
         />
       )}
-      {props.email && props.email.length > 0 && (
+      {props.facebook && props.facebook.length > 0 && (
         <SocialIcon
-          link={props.email}
-          icon={<FontAwesomeIcon icon={faMailBulk} />}
+          link={props.facebook}
+          icon={<FontAwesomeIcon icon={faFacebookF} />}
+        />
+      )}
+      {props.instagram && props.instagram.length > 0 && (
+        <SocialIcon
+          link={props.instagram}
+          icon={<FontAwesomeIcon icon={faInstagram} />}
         />
       )}
     </div>

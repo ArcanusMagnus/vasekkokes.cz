@@ -29,10 +29,11 @@ const About = () => {
         don&apos;t hesitate to contact me.
       </p>
       <Socials
-        facebook="https://www.facebook.com/vasek.kokes"
+        // facebook="https://www.facebook.com/vasek.kokes"
         behance="https://www.behance.net/vasekkokes"
         linkedin="https://www.linkedin.com/in/vasekkokes"
         email="mailto:vasek.kokes@gmail.com"
+        instagram="https://www.instagram.com/vasekkokes/"
       />
       <p className={styles.contact}>
         Václav Kokeš
