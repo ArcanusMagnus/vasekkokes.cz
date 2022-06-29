@@ -1,0 +1,7 @@
+.socials {
+    margin: auto;
+    width: 42.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
