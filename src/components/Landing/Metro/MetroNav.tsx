@@ -1,9 +1,26 @@
 import { v4 as uuidv4 } from "uuid";
-import MetroStopModel from "../../../models/metro-stop";
 
+import MetroStopModel, { StationType } from "../../../models/metro-stop";
+import { ArticleContent, ArticleModel } from "../../../models/article-model";
 import Section from "../../UI/Section";
 import MetroGrid from "./MetroGrid";
 import styles from "./MetroNav.module.css";
+import data from "../../../data/data.json"
+
+
+const processedData: MetroStopModel[] = [];
+
+for(const article of data){
+  processedData.push({
+    id: uuidv4(),
+    label: article.label,
+    label_left: article.label_left ?? false,
+    events: article.events ? "active" : undefined,
+    visual: article.visual ? "active" : undefined,
+    writing: article.writing ? "active" : undefined,
+    ideas: article.ideas ? "active" : undefined
+  })
+}
 
 const STOPS_DATA: MetroStopModel[] = [
   {
@@ -105,10 +122,11 @@ const STOPS_DATA: MetroStopModel[] = [
   },
 ];
 
+
 const MetroNav = () => {
   return (
     <Section className={styles.MetroNav}>
-      <MetroGrid data={STOPS_DATA} />
+      <MetroGrid data={processedData} />
     </Section>
   );
 };

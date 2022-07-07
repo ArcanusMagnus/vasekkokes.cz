@@ -1,4 +1,4 @@
-type MetroStopModel = {
+interface MetroStopModel {
   id: string;
   label: string;
   label_left?: boolean;
@@ -17,7 +17,7 @@ export type MetroData = {
   content?: string;
 };
 
-export type MetroStopComponent = MetroData & {
+export interface MetroStopComponent extends MetroData {
   children?: React.ReactNode;
 };
 
