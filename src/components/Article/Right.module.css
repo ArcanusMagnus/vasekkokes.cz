@@ -1,0 +1,15 @@
+.right {
+    max-width: 70%;
+    max-height: 100vh;
+    padding: 5rem 2rem;
+    overflow-y: scroll;
+    font-size: 1.2rem;
+    display: flex;
+    flex-flow: column;
+}
+
+.horizontal {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    flex-flow: row;
+}

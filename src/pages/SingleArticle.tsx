@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 
 import Left from "../components/Article/Left";
+import Right from "../components/Article/Right";
+import Section from "../components/UI/Section";
 import data from "../data/data.json";
 import { ArticleModel } from "../models/article-model";
 
@@ -17,7 +19,16 @@ const SingleArticle = () => {
     };
     console.log(articleProcessedData);
 
-    return <Left color={articleProcessedData.color} title={articleProcessedData.label} description={articleProcessedData.description!}/>;
+    return (
+      <Section>
+        <Left
+          color={articleProcessedData.color}
+          title={articleProcessedData.label}
+          description={articleProcessedData.description!}
+        />
+        <Right content={articleProcessedData.content} horizontal />
+      </Section>
+    );
   }
   return <>Fucking error</>;
 };
