@@ -1,0 +1,36 @@
+.left {
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    color: white;
+}
+
+.left h2 {
+    margin-block-end: 2rem;
+    line-height: 95%;
+}
+
+.left p {
+    font-size: 1.2rem;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.back {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.back p {
+    margin-left: 1rem;
+}
+
+.back__icon {
+    font-size: 3rem;
+}
