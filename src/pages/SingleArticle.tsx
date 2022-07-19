@@ -10,14 +10,14 @@ const SingleArticle = () => {
   const { aid } = useParams();
   const articleData = data.find(
     (item) => item.label.replace(/\W/g, "_") === aid
-  );
+  ) as ArticleModel;
 
   if (articleData) {
-    const articleProcessedData: ArticleModel = {
+    const articleProcessedData = {
+      //Needs better solution to make id mandatory and always present
+      id: articleData.label.replace(/\W/g, "_") ?? "errorId",
       ...articleData,
-      id: articleData!.label.replace(/\W/g, "_"),
     };
-    // console.log(articleProcessedData);
 
     return (
       <Section>

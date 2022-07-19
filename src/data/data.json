@@ -20,7 +20,12 @@
           "<p>Definic pojmu rytmus je mnoho, většina z nich vychází z analýzy řeckého pojmu rhytmos, např. Josef Král ve své knize Řecká a římská metrika definuje rhytmos jako <i>„proud, pravidelný pohyb“ </i><sup>(5)</sup>. Werner Jäger pak charakterizuje rytmus jako <i>„sondern ungekehrt Halt und feste Begrenzung der Bewegung“</i> <sup>(6).</sup><br>Z uvedených definic tedy vidíme, že rytmus je determinován procesem svého vzniku, pohybem. Proto není rytmus omezen pouze na hudbu, vizuální umění nebo poesii. Pohyb, proces, změnu lze zachytit různými médii. Petersen dokonce uvádí, že rytmus je <i>„die Bewegung einer unbewegten Gestalt, die durch Bewegung entstand“</i> <sup>(7)</sup>. Samozřejmě nelze považovat za rytmický jakýkoliv pohyb. Musí dojít k jeho zachycení smysly a zpracování v mozku pozorovatele/posluchače. Rytmus tedy vzniká interakcí, jeho poznáním. Kapání vody není rytmem, jestliže si posluchač nezvolí určitý impuls jako referenční bod <sup>(8)</sup> a od něj odvodí délku trvání jedné sekvence, pulzu.<br>Slyšitelný dopad kapky označím „•“, neslyšitelnou pauzu „-“. Předpokládejme, že kapání vody je pravidelným rytmem.</p>"
         ],
         [
-          "<img src=\"http://vasekkokes.cz/images/Ornament%20and%20rhythm/Ornament-01.png\" alt=\"Ornament 01\" name=\"Ornament 01\">"
+          "<img src=\"http://vasekkokes.cz/images/Ornament%20and%20rhythm/Ornament-01.png\" alt=\"Ornament 01\">"
+        ],
+        [
+          "<p>Puls je základním rytmem. Střídají se v něm dva prvky, impuls (v našem případě zvuk) a časový interval - ticho v pravidelně se opakujícím intervalu. Není nijak strukturovaný, neobsahuje žádné rytmické vzorce (patterny).</p>",
+          "<img src=\"http://vasekkokes.cz/images/Ornament%20and%20rhythm/Ornament-02.png\" alt=\"Ornament 02\">",
+          "<img src=\"http://vasekkokes.cz/images/Ornament%20and%20rhythm/Ornament-03.png\" alt=\"Ornament 03\">"
         ]
       ]
     ],
@@ -33,8 +38,12 @@
     "visual": true,
     "writing": true,
     "ideas": true,
-    "color": "blue"
-
+    "gallery": [
+      ["afgssadfsda", "fsaf"],
+      ["fasdfasdf asf gsda f", "fadsfasd"]
+    ],
+    "color": "#afad26",
+    "description": "][ (Doublebrackets) started as a project aiming to bring new, interesting indie bands and music projects to Prague. ][ started as a duo of friends and became a one man effort a few years after the start. We organized more than 30 events in five years, both in venues and outdoors. The main goal was always to provide small indie bands and music projects full professional service with quality promotion, graphic design, production etc. ][ was also the first initiative to bring live music back to public space and abandoned spaces. Live music production was illegal in Prague during those days and connecting music with urban exploration and site specific projections was unique. Thanks to our work we became part of an independent production network exchanging ideas and experience all across Europe."
   },
   {
     "label": "Ornamental tapestry",

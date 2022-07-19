@@ -1,5 +1,4 @@
 import parse from "html-react-parser";
-import { JsxElement } from "typescript";
 
 import { ArticleContent } from "../../models/article-model";
 import styles from "./Right.module.css";
