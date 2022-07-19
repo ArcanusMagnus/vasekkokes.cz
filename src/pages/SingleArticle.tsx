@@ -17,7 +17,7 @@ const SingleArticle = () => {
       ...articleData,
       id: articleData!.label.replace(/\W/g, "_"),
     };
-    console.log(articleProcessedData);
+    // console.log(articleProcessedData);
 
     return (
       <Section>
@@ -26,7 +26,7 @@ const SingleArticle = () => {
           title={articleProcessedData.label}
           description={articleProcessedData.description!}
         />
-        <Right content={articleProcessedData.content} horizontal />
+        <Right content={articleProcessedData.content} />
       </Section>
     );
   }
